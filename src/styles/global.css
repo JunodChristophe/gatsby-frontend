@@ -1,0 +1,272 @@
+
+/* --- front-page --- */
+
+/* --- Layout général --- */
+body {
+  background: #f8f9fa;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* --- Hero --- */
+.hero {
+  background: #4169e1;
+  color: #fff;
+  padding: 4rem 0 3rem 0;
+  text-align: center;
+}
+.hero__subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.85;
+}
+.hero__image {
+  max-width: 320px;
+  border-radius: 16px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+/* --- À propos --- */
+.about {
+  background: #fff;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+.about__text {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* --- Services --- */
+.services {
+  background: #f8f9fa;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+.services__list {
+  display: flex;
+  gap: 2.8rem;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+.services__list li {
+  background: #e9ecef;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  min-width: 120px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+/* --- Projets --- */
+.projects {
+  background: #fff;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+.projects__list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.project {
+  background: #e9ecef;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 1.5rem;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+.project:hover {
+  box-shadow: 0 6px 32px rgba(65,105,225,0.12);
+}
+.project__image img {
+  border-radius: 10px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+.project__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #4169e1;
+  text-align: center;
+}
+.project__description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  opacity: 0.85;
+}
+.project__lien {
+  display: inline-block;
+  background: #4169e1;
+  color: #fff !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.project__lien:hover {
+  background: #27408b;
+}
+
+/* --- contact / Formulaire --- */
+.contact {
+  background: #4169e1;
+  color: #fff;
+  padding: 2rem 0;
+  margin-top: -2rem;
+  text-align: center;
+}
+.contact__form {
+  margin-top: 1.5rem;
+}
+.contact__button {
+  display: inline-block;
+  background: #fff;
+  color: #4169e1;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: background 0.2s, color 0.2s;
+}
+.contact__button:hover {
+  background: #27408b;
+  color: #fff;
+}
+
+/* --- Responsive --- */
+@media (max-width: 700px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+  .services__list,
+  .projets__list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .projet {
+    width: 100%;
+  }
+}
+
+/* --- Menu de navigation des sections --- */
+.section-menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  background: #fff;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(65,105,225,0.05);
+}
+
+.section-menu li {
+  position: relative;
+}
+
+.section-menu li a {
+  color: #4169e1;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.section-menu li a:hover,
+.section-menu li a.active {
+  background: #4169e1;
+  color: #fff;
+}
+
+/* Sélecteur de langue */
+.wpml-ls,
+.language-switcher,
+.menu-item-language {
+  margin-left: 1rem;
+}
+
+.wpml-ls a,
+.language-switcher a,
+.menu-item-language a {
+  color: #4169e1;
+  background: #e9ecef;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 0.2rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.wpml-ls a:hover,
+.language-switcher a:hover,
+.menu-item-language a:hover {
+  background: #4169e1;
+  color: #fff;
+}
+
+/* --- Sélecteur de langue --- */
+.language-switcher {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.language-switcher button {
+  background: #e9ecef;
+  color: #4169e1;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.language-switcher button:hover,
+.language-switcher button:focus {
+  background: #4169e1;
+  color: #fff;
+  outline: none;
+}
+
+.language-switcher button:disabled {
+  background: #4169e1;
+  color: #fff;
+  opacity: 0.7;
+  cursor: default;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .main-navigation .menu,
+  .onepage-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+}
