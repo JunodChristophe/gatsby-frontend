@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from "gatsby";
+import { useLocation } from "@reach/router";
 
 import { useTranslation } from 'react-i18next';
 import { navigate } from "gatsby"
@@ -11,25 +12,34 @@ import { navigate } from "gatsby"
 // Prod :
 const statamicPath = 'https://laravel.site-demo-christophe-junod.ch/api';
 
-function Menu() {
-  const { t } = useTranslation();
+const Menu = () => {
+  const { t } = useTranslation(["translation"]);
 
   return (
-    <nav>
-      <ul className="section-menu">
-        <li><a href="#hero">{t('Accueil')}</a></li>
-        <li><a href="#about">{t('À propos')}</a></li>
-        <li><a href="#services">{t('Services')}</a></li>
-        <li><a href="#projects">{t('Projets')}</a></li>
-        <li><a href="#contact">{t('Contact')}</a></li>
-      </ul>
-      
+    <ul className="section-menu">
+      <li><a href="#hero">{t('Accueil')}</a></li>
+      <li><a href="#about">{t('À propos')}</a></li>
+      <li><a href="#services">{t('Services')}</a></li>
+      <li><a href="#projects">{t('Projets')}</a></li>
+      <li><a href="#contact">{t('Contact')}</a></li>
+    </ul>
+  );
+}
+
+const LanguageSwitcher = () => {
+  const location = useLocation();
+
+  const changeLang = (lang) => {
+    const path = location.pathname;
+    navigate(`${path}?lang=${lang}`);
+  };
+
+  return (
       <div className="language-switcher">
-        <button onClick={() => navigate(`/?lang=fr`)}>FR</button>
-        <button onClick={() => navigate(`/?lang=en`)}>EN</button>
-        <button onClick={() => navigate(`/?lang=de`)}>DE</button>
+        <button onClick={() => changeLang("fr")}>FR</button>
+        <button onClick={() => changeLang("en")}>EN</button>
+        <button onClick={() => changeLang("de")}>DE</button>
       </div>
-    </nav>
   );
 }
 
@@ -149,7 +159,7 @@ const Contact = ({ lang = 'fr' }) => {
         <h2>{data.title}</h2>
         <div className="about__text"></div>
         <div className="contact__form">
-          <Link className="contact__button" to={`/page-2?lang=${lang}`}>
+          <Link className="contact__button" to={`/formPage?lang=${lang}`}>
             {data.content}
           </Link>
         </div>
@@ -158,4 +168,4 @@ const Contact = ({ lang = 'fr' }) => {
   );
 };
 
-export { Menu, Hero, About, Services, Projects, Contact };
+export { Menu, LanguageSwitcher, Hero, About, Services, Projects, Contact };

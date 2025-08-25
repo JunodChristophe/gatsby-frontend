@@ -1,18 +1,18 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import fr from './locales/fr.json';
-import en from './locales/en.json';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import Backend from "i18next-http-backend";
 
-i18n.use(initReactI18next)
+i18n
+  .use(Backend)
+  .use(initReactI18next)
   .init({
-  resources: {
-    fr: { translation: fr },
-    en: { translation: en }
-  },
-  lng: 'fr', // langue par défaut
-  fallbackLng: 'en',
-  interpolation: { escapeValue: false },
-  missingKeyHandler: function(lng, ns, key, fallbackValue) {
-    console.warn(`Missing translation key: ${key} for language: ${lng}`);
-  }
-});
+    lng: "fr",
+    fallbackLng: "en",
+    ns: ["translation", "form", "options", "options.countries"],
+    defaultNS: "translation",
+    backend: {
+      loadPath: "/static/locales/{{lng}}/{{ns}}.json"
+    }
+  });
+
+export default i18n;

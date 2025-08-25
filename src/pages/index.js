@@ -3,7 +3,7 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import {Menu, Hero, About, Services, Projects, Contact} from '../components/frontPage';
+import {Menu, Hero, About, Services, Projects, Contact, LanguageSwitcher} from '../components/frontPage';
 
 const getLangFromSearch = (search) => {
   const params = new URLSearchParams(search)
@@ -16,7 +16,10 @@ const IndexPage = () => {
     : "fr"
   return (
     <Layout>
-      <Menu />
+      <nav>
+        <Menu />
+        <LanguageSwitcher />
+      </nav>
       <Hero lang={lang} />
       <About lang={lang} />
       <Services lang={lang} />
