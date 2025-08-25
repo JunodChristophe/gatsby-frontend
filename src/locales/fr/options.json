@@ -1,0 +1,70 @@
+{
+  "urgencyOptions": {
+    "urgentEntry": "Entrée urgente",
+    "entryIn1Month": "Entrée dans 1 mois",
+    "entryIn3Months": "Entrée dans les 3 mois",
+    "entryIn6Months": "Entrée dans les 6 mois",
+    "waitingListPriority": "Être inscrit sur la liste d’attente pour être prioritaire en cas de besoin",
+    "other": "Autre"
+  },
+  "commonOptions": {
+    "yes": "oui",
+    "no": "non",
+    "dateFormat": "JJ/MM/AAAA",
+    "pleaseSpecify": "Autre. Veuillez spécifier"
+  },
+  "maritalStatusOptions": {
+    "married": "Marié(e)",
+    "single": "Célibataire",
+    "separated": "Séparé(e)",
+    "divorced": "Divorcé(e)",
+    "widowed": "Veuf(ve)"
+  },
+  "lifestyleOptions": {
+    "livingAlone": "Vivant seul",
+    "partnerInSameHouse": "Conjoint vivant dans la même maison",
+    "other": "Autre"
+  },
+  "originOptions": {
+    "home": "Domicile",
+    "hospital": "Hôpital",
+    "other": "Autre"
+  },
+  "roomOptions": {
+    "singleBed": "1 lit",
+    "doubleBed": "2 lits",
+    "tv": "TV",
+    "telephone": "Téléphone",
+    "rc": "RC",
+    "toiletryKit": "Matériel de toilette",
+    "hairdresser": "Coiffeur",
+    "dentist": "Dentiste",
+    "dentalHygienist": "Hygiéniste dentaire",
+    "medicalPedicure": "Pédicure prescription médicale",
+    "pocketMoney": "Argent poche",
+    "fluVaccineConsent": "Accord pour vaccin saisonnier contre la grippe"
+  },
+  "representativeTypeOptions": {
+    "administrative": "administratif",
+    "therapeutic": "et/ou thérapeutique"
+  },
+  "relationshipOptions": {
+    "spouse": "Epoux(se)",
+    "child": "Fils (fille)",
+    "legalRepresentative": "Représ.légal",
+    "other": "Autre"
+  },
+  "administrativeRepresentativeOptions": {
+    "therapeutic": "Et/ou thérapeutique",
+    "billingContact": "(Facturation, principal contact)"
+  },
+  "impotencePensionOptions": {
+    "yes": "oui",
+    "no": "non",
+    "pending": "Demande en cours"
+  },
+  "impotencePensionDetails": {
+    "name": "Nom",
+    "amount": "Montant"
+  }
+}

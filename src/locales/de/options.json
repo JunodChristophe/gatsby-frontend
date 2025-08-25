@@ -1,0 +1,70 @@
+{
+  "urgencyOptions": {
+    "urgentEntry": "Dringende Aufnahme",
+    "entryIn1Month": "Aufnahme innerhalb eines Monats",
+    "entryIn3Months": "Aufnahme innerhalb von 3 Monaten",
+    "entryIn6Months": "Aufnahme innerhalb von 6 Monaten",
+    "waitingListPriority": "Auf Warteliste setzen, um bei Bedarf Priorität zu erhalten",
+    "other": "Andere"
+  },
+  "commonOptions": {
+    "yes": "ja",
+    "no": "nein",
+    "dateFormat": "TT/MM/JJJJ",
+    "pleaseSpecify": "Andere. Bitte angeben"
+  },
+  "maritalStatusOptions": {
+    "married": "Verheiratet",
+    "single": "Ledig",
+    "separated": "Getrennt",
+    "divorced": "Geschieden",
+    "widowed": "Verwitwet"
+  },
+  "lifestyleOptions": {
+    "livingAlone": "Alleinlebend",
+    "partnerInSameHouse": "Partner lebt im selben Haushalt",
+    "other": "Andere"
+  },
+  "originOptions": {
+    "home": "Zuhause",
+    "hospital": "Spital",
+    "other": "Andere"
+  },
+  "roomOptions": {
+    "singleBed": "1 Bett",
+    "doubleBed": "2 Betten",
+    "tv": "Fernseher",
+    "telephone": "Telefon",
+    "rc": "Haftpflichtversicherung",
+    "toiletryKit": "Toilettenartikel",
+    "hairdresser": "Friseur",
+    "dentist": "Zahnarzt",
+    "dentalHygienist": "Dentalhygieniker",
+    "medicalPedicure": "Medizinische Fußpflege (auf Rezept)",
+    "pocketMoney": "Taschengeld",
+    "fluVaccineConsent": "Einverständnis zur Grippeimpfung"
+  },
+  "representativeTypeOptions": {
+    "administrative": "Administrativ",
+    "therapeutic": "Und/oder therapeutisch"
+  },
+  "relationshipOptions": {
+    "spouse": "Ehepartner(in)",
+    "child": "Kind",
+    "legalRepresentative": "Gesetzlicher Vertreter",
+    "other": "Andere"
+  },
+  "administrativeRepresentativeOptions": {
+    "therapeutic": "Und/oder therapeutisch",
+    "billingContact": "(Rechnungsstellung, Hauptkontakt)"
+  },
+  "impotencePensionOptions": {
+    "yes": "ja",
+    "no": "nein",
+    "pending": "Antrag läuft"
+  },
+  "impotencePensionDetails": {
+    "name": "Name",
+    "amount": "Betrag"
+  }
+}
