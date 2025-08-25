@@ -1,0 +1,70 @@
+{
+  "urgencyOptions": {
+    "urgentEntry": "Urgent admission",
+    "entryIn1Month": "Admission within 1 month",
+    "entryIn3Months": "Admission within 3 months",
+    "entryIn6Months": "Admission within 6 months",
+    "waitingListPriority": "Register on the waiting list for priority if needed",
+    "other": "Other"
+  },
+  "commonOptions": {
+    "yes": "yes",
+    "no": "no",
+    "dateFormat": "DD/MM/YYYY",
+    "pleaseSpecify": "Other. Please specify"
+  },
+  "maritalStatusOptions": {
+    "married": "Married",
+    "single": "Single",
+    "separated": "Separated",
+    "divorced": "Divorced",
+    "widowed": "Widowed"
+  },
+  "lifestyleOptions": {
+    "livingAlone": "Living alone",
+    "partnerInSameHouse": "Partner living in the same house",
+    "other": "Other"
+  },
+  "originOptions": {
+    "home": "Home",
+    "hospital": "Hospital",
+    "other": "Other"
+  },
+  "roomOptions": {
+    "singleBed": "1 bed",
+    "doubleBed": "2 beds",
+    "tv": "TV",
+    "telephone": "Telephone",
+    "rc": "Liability insurance",
+    "toiletryKit": "Toiletry kit",
+    "hairdresser": "Hairdresser",
+    "dentist": "Dentist",
+    "dentalHygienist": "Dental hygienist",
+    "medicalPedicure": "Medical prescription pedicure",
+    "pocketMoney": "Pocket money",
+    "fluVaccineConsent": "Consent for seasonal flu vaccination"
+  },
+  "representativeTypeOptions": {
+    "administrative": "Administrative",
+    "therapeutic": "And/or therapeutic"
+  },
+  "relationshipOptions": {
+    "spouse": "Spouse",
+    "child": "Child",
+    "legalRepresentative": "Legal representative",
+    "other": "Other"
+  },
+  "administrativeRepresentativeOptions": {
+    "therapeutic": "And/or therapeutic",
+    "billingContact": "(Billing, main contact)"
+  },
+  "impotencePensionOptions": {
+    "yes": "yes",
+    "no": "no",
+    "pending": "Application in progress"
+  },
+  "impotencePensionDetails": {
+    "name": "Name",
+    "amount": "Amount"
+  }
+}
